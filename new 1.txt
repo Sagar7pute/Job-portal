@@ -1,0 +1,10 @@
+!) select.php
+ $res=$con->query("SELECT job.jid,employee.eeid,eename,eadd,econ,STATUS FROM `job`,employee,application WHERE job.jid=application.jid AND employee.eeid=application.eeid AND STATUS=0 AND job.jid='$jid' AND job.eid='$id'");
+
+
+
+
+2)view
+SELECT job.jid,employee.eeid,eename,eadd,econ,STATUS FROM `job`,employee,application WHERE job.jid=application.jid AND employee.eeid=application.eeid AND STATUS =1 AND job.jid='$jid'
+
+
